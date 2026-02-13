@@ -1,11 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'montserrat';
     color: #fff;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -22,6 +24,7 @@ html, body{
     position: fixed;
     z-index: 99;
 }
+
 #nav img {
     height: 65px;
     border-radius: 50%;
@@ -37,7 +40,7 @@ video {
     width: 100%;
     object-fit: cover;
     position: fixed;
-    z-index: -1; 
+    z-index: -1;
 }
 
 #main {
@@ -55,26 +58,30 @@ video {
     flex-direction: column;
     text-align: center;
 }
+
 #page1 h1 {
     font-size: 140px;
     font-weight: 900;
     position: relative;
 }
-#page1 h1::before{
-   content: "EAT. DRINK. PLAY."; 
-   position: absolute;
-   color: #000;
-   top: -5px;
-   left: -5px;
-   -webkit-text-stroke: 1.5px #95c11e;
+
+#page1 h1::before {
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 1.5px #95c11e;
     z-index: -1;
 }
+
 #page1 h2 {
     font-size: 30px;
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 #page1 p {
     font-size: 18px;
     font-weight: 500;
@@ -84,4 +91,13 @@ video {
 #page2 {
     height: 100vh;
     width: 100%;
+}
+
+#cursor {
+    height: 25px;
+    width: 25px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
 }
