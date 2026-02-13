@@ -1,11 +1,16 @@
-
-
 // custom cursar
 var cursor = document.querySelector("#cursor")
+var cursor_blur = document.querySelector("#cursor_blur")
+
 document.addEventListener("mousemove", function(dets) {
     cursor.style.left = dets.x + "px"
     cursor.style.top = dets.y + "px"
+    cursor_blur.style.left = dets.x - 250 + "px"
+    cursor_blur.style.top = dets.y - 250 + "px"
 })
+
+
+
 
 
 gsap.to("#nav", {
