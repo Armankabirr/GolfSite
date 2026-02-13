@@ -13,18 +13,28 @@ html, body{
 #nav {
     height: 80px;
     width: 100%;
-    background-color:red;
+    /* background-color:red; */
     padding: 0 150px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
+    position: fixed;
+    z-index: 99;
 }
 #nav img {
-    height: 80px;
+    height: 65px;
+    border-radius: 50%;
 }
 
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
 }
