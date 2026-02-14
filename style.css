@@ -34,6 +34,7 @@ body {
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
+    cursor: pointer;
 }
 
 video {
@@ -162,7 +163,7 @@ video {
 
 /* ABOUT */
 #about-us {
-  height: 40vh;
+  height: 60vh;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -205,6 +206,7 @@ video {
   gap: 70px;
   position: relative;
   z-index: 10;
+  margin-bottom: 20px;
 }
 
 .cards {
