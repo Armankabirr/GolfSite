@@ -9,10 +9,6 @@ document.addEventListener("mousemove", function(dets) {
     cursor_blur.style.top = dets.y - 250 + "px"
 })
 
-
-
-
-
 gsap.to("#nav", {
     backgroundColor: "#000",
     height: "70px",
