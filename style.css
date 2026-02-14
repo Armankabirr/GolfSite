@@ -50,6 +50,11 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+#nav h4:hover {
+    text-shadow: 0 0 20px #95c11e, 0 0 40px #95c11e, 0 0 60px #95c11e;
 }
 
 video {
@@ -469,4 +474,14 @@ video {
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 8px;
+}
+
+#f4 a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#f4 a:hover {
+  color: #fff;
 }
