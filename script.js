@@ -22,6 +22,39 @@ h4all.forEach(function(elem) {
     })
 })
 
+var arrow = document.querySelector("#arrow")
+var page2 = document.querySelector("#page2")
+if (arrow && page2) {
+  var smoothScrollTo = function(targetY, duration) {
+    var startY = window.pageYOffset
+    var distance = targetY - startY
+    var startTime = null
+    var easeInOutCubic = function(t) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+    }
+
+    var step = function(timestamp) {
+      if (!startTime) {
+        startTime = timestamp
+      }
+      var elapsed = timestamp - startTime
+      var progress = Math.min(elapsed / duration, 1)
+      var eased = easeInOutCubic(progress)
+      window.scrollTo(0, startY + distance * eased)
+      if (elapsed < duration) {
+        window.requestAnimationFrame(step)
+      }
+    }
+
+    window.requestAnimationFrame(step)
+  }
+
+  arrow.addEventListener("click", function() {
+    var targetY = page2.getBoundingClientRect().top + window.pageYOffset
+    smoothScrollTo(targetY, 1400)
+  })
+}
+
 
 
 gsap.to("#nav", {

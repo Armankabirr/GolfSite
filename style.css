@@ -27,7 +27,7 @@ body {
 }
 
 #nav img {
-    height: 65px;
+    height: 35px;
     border-radius: 50%;
 }
 
@@ -90,6 +90,28 @@ video {
     font-weight: 500;
     width: 40%;
 }
+#page1 #arrow {
+  height: 160px;
+  width: 160px;
+  background-color: transparent;
+  border: 1.7px solid #95c11e;
+  position: absolute;
+  display: flex;
+  left: -2%;
+  bottom: 0%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+#page1 #arrow i {
+  font-size: 50px;
+  font-weight: 100;
+}
+#page1 #arrow:hover {
+  scale: 0.4;
+  background-color: #95c11e;
+}
 
 #page2 {
     min-width: 100vh;
@@ -103,6 +125,7 @@ video {
     border-radius: 50%;
     position: fixed;
     z-index: 99;
+  pointer-events: none;
 }
 #cursor_blur {
     height: 500px;
@@ -112,6 +135,7 @@ video {
     position: fixed;
     filter: blur(50px);
     z-index: 9;
+  pointer-events: none;
 }
 
 #scroller {
