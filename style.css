@@ -12,6 +12,21 @@ body {
     width: 100%;
     /* perspective: 800px;  */
 }
+*::selection {
+  background-color: #fff;
+  color: #95c11e;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 7px;
+  background: #95c11e;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 50px;
+}
+
 
 #nav {
     height: 80px;
